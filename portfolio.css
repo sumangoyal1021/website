@@ -1,0 +1,21 @@
+body{
+	background-color: lightgrey;
+}
+
+#image{
+	height: 40px;
+	width: 40px;
+	border-radius: 30%;
+	margin-top: 1px;
+}
+
+#image1{
+	height: 600px;
+	width: 400px;
+	margin-left: 50px;
+}
+
+#image2{
+	height: 300px;
+	width: 700px;
+}
