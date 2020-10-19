@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: black;
+    color: cyan;
+    height: 600px;
+    width: 700px;
+    margin-top: 120px;
+    ;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font-size: 22px;
+}
+
+ul li a:hover {
+    background-color: rgb(149, 226, 48);
+}
+
+ul1 li1 {
+    display: inline-block;
+}
+
+ul1 li1 a {
+    text decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    transition: 0.6s ease;
+    font-size: 20;
+    background-color: aqua;
+    border-radius: 20%;
+}
+
+ul1 li1 a:hover {
+    background-color: yellow;
+}
