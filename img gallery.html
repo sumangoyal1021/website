@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Gallery</title>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous" />
+
+    <style>
+        body{
+            background: grey;
+            margin-top: 20px;
+            font-family: sans-serif;
+            color: blanchedalmond;
+        }
+        .thumbnails img{
+            height: 80px;
+            border: 1px solid gray;
+            padding: 1px;
+            margin: 0 10px 10px 0;
+        }
+        .thumbnails img:hover{
+            border: 4px solid yellow;
+        }
+        .preview img{
+            border: 2px solid chocolate;
+            padding: 1px;
+            width: 800px;
+        }
+    </style>
+
+</head>
+<body>
+          <!-- Navigation-->
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <h2><a class="navbar-brand" href="#">Blogging Website</a></h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">         
+           <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="type">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="portfolio1.html">Suman Goyal</a>
+                <a class="dropdown-item" href="portfolio.html">Himanshu Dalal</a>
+                <a class="dropdown-item" href="portfolio2.html">Mukul Rathore</a>
+                <a class="dropdown-item" href="portfolio3.html">Akshat Nigam</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Contact</a>
+            </li>           
+
+            <li class="nav-item active">
+              <a class="nav-link" href="portfolio.html">Events</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+  </div><br><br><br>
+
+
+    <div  id="container" align="center">
+     <div class="thumbnails">
+         <img onmouseover="preview.src=sports2.src" name="sports2" src="sports2.jpg">
+         <img onmouseover="preview.src=img1.src" name="img1" src="img1.jpg">
+         <img onmouseover="preview.src=current.src" name="current" src="current.jpg">
+         <img onmouseover="preview.src=login.src" name="login" src="login.jpg">
+         <img onmouseover="preview.src=sports1.src" name="sports1" src="sports1.jpg">
+         <img onmouseover="preview.src=education.src" name="education" src="education.jpg">
+        </div> 
+       <div class="preview" align="center">
+        <img name="preview" src="sports7.jpg" height=450 widht=450>
+       </div>
+    </div>
+       
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+</body>
+
+</html>
