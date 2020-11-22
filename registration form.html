@@ -1,99 +1,96 @@
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<title>create new account</title>
-<link rel="stylesheet" type="text/css" href="css/reg form.css">
+    <title>Create new</title>
+    <link rel="stylesheet" type="text/css" href="css/reg form.css">
 
-<script>
-  function display()
-  {
-  var a = document.getElementById("name");
-  var b = document.getElementById("pass");
-  var c = document.getElementById("num");
-  var d = document.getElementById("email");
-  
-  if(a.value.trim() =="" ||b.value.trim() == "" ||c.value.trim() == "" ||d.value.trim() == "")
-  {
-      alert("Please fill all the details");
-  }
-  else if(b.value.trim().length<5)
-  {
-      alert("Too short password");
-  }
-  else if(c.value.trim().length<10)
-  {
-      alert("Enter 10 digit number");
-  }
-  } 
-</script>
+    <script>
+        function display() {
+            var a = document.getElementById("name");
+            var b = document.getElementById("pass");
+            var c = document.getElementById("num");
+            var d = document.getElementById("email");
+
+            if (a.value.trim() == "" || b.value.trim() == "" || c.value.trim() == "" || d.value.trim() == "") {
+                alert("Please fill all the details");
+            } else if (b.value.trim().length < 5) {
+                alert("Too short password");
+            } else if (c.value.trim().length < 10) {
+                alert("Enter 10 digit number");
+            }
+        }
+    </script>
 </head>
-<body>
-<div class="container">
-<h1>REGESTRATION FORM</h1>
-  <div class="row">
-      <div class="col-lg-6 col-md-6">
-      <h4>Enter First Name: <input type="text" placeholder="Enter First Name" id="name"></h4>
-      </div>
-      <div class="col-lg-6 col-md-6">
-      <h4>Enter Last Name: <input type="text" placeholder="Enter Last Name" id="name"> </h4>
-      </div>  
-  </div><br><br>
-  <div class="row">
-    <div class="col-lg-6 col-md-6">
-    <h4>Create Password: <input type="text" placeholder="Password" id="pass"></h4>
-    </div>
-    <div class="col-lg-6 col-md-6">
-    <h4>Confirm Password: <input type="password" placeholder="Re-Enter Password" id="pass"> </h4>
-    </div>  
-</div><br><br>
-<div class="row">
-  <div class="col-lg-6 col-md-6">
-  <h4>Phone Number: <input type="text" placeholder="10 digit Number" id="num"></h4>
-  </div>
-  <div class="col-lg-6 col-md-6">
-  <h4>E-mail Id: <input type="text" placeholder="eg: abc@gmail.com" id="email"> </h4>
-  <label id="lb1text" style="color: red;visibility: hidden;">invalid</label><br>
 
-  </div>  
-</div><br><br>
-<div class="row">
-  <div class="col-lg-6 col-md-6">
-  <h4>Select gender: <input type="radio" name="r1" id="r" value="Male">Male
-  <input type="radio" name="r1" id="r" value="Female">Female</h4>
-  </div>
-  <div class="col-lg-6 col-md-6">
-  <h4>Select Language :
-    <input type="checkbox" id="c1" value="Hindi">Hindi
-    <input type="checkbox" id="c2" value="English">English</h4>
-  </div>  
-</div><br><br>
-<div class="row">
-  <div class="col-lg-4 col-md-4">
-    <h4>Select Region</h4>
-    <select class="form-control">
+<body>
+    <div class="container">
+        <h1>REGESTRATION FORM</h1>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h4>Enter First Name: <input type="text" placeholder="Enter First Name" id="name"></h4>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <h4>Enter Last Name: <input type="text" placeholder="Enter Last Name" id="name"> </h4>
+            </div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h4>Create Password: <input type="text" placeholder="Password" id="pass"></h4>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <h4>Confirm Password: <input type="password" placeholder="Re-Enter Password" id="pass"> </h4>
+            </div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h4>Phone Number: <input type="text" placeholder="10 digit Number" id="num"></h4>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <h4>E-mail Id: <input type="text" placeholder="eg: abc@gmail.com" id="email"> </h4>
+                <label id="lb1text" style="color: red;visibility: hidden;">invalid</label><br>
+
+            </div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h4>Select gender: <input type="radio" name="r1" id="r" value="Male">Male
+                    <input type="radio" name="r1" id="r" value="Female">Female</h4>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <h4>Select Language :
+                    <input type="checkbox" id="c1" value="Hindi">Hindi
+                    <input type="checkbox" id="c2" value="English">English</h4>
+            </div>
+        </div><br><br>
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <h4>Select Region</h4>
+                <select class="form-control">
       <option value="India">India</option><br>
       <option value="US">US</option><br>
       <option value="Japan">Japan</option><br>
       <option value="Russia">Russia</option><br>
       </select>
-      </div>
-      </div><br>
-      <div class="row">
-        <div class="col-lg-7 col-md-7">
-        </div>
-        <div class="col-lg-5 col-md-5">
-        <button type="button" onclick="my();" class="btn btn-info btn-lg">Go Back</button>
-        <button type="button" onclick="display();" class="btn btn-danger btn-lg"> Confirm</button>
-        </div>  
-      </div><br><br>
-      
-</div>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-lg-7 col-md-7">
+            </div>
+            <div class="col-lg-5 col-md-5">
+                <button type="button" onclick="my();" class="btn btn-info btn-lg">Go Back</button>
+                <button type="button" onclick="display();" class="btn btn-danger btn-lg"> Confirm</button>
+            </div>
+        </div><br><br>
+
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>
